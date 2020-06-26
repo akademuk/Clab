@@ -12,7 +12,7 @@
               rgba(0, 0, 0, 0.9) 0.01%,
               rgba(0, 0, 0, 0) 100%
             ),
-            url(../../img/header_bg.jpg);
+            url(../img/header_bg.jpg);
           height: 100vh;
           background-size: cover !important;
           background-repeat: no-repeat;
@@ -36,10 +36,10 @@
       outline: none;
     }
     .slick-prev {
-      background: url(../../img/prev.png);
+      background: url(../img/prev.png);
     }
     .slick-next {
-      background: url(../../img/next.png);
+      background: url(../img/next.png);
       left: 17%;
     }
     .slick-dots {
@@ -78,7 +78,7 @@
       rgba(0, 0, 0, 0.9) 0.01%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(../../img/header_bg2.jpg) !important;
+    url(../img/header_bg2.jpg) !important;
 }
 .logo {
   margin: 22px 0 0 45px;
