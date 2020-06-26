@@ -169,18 +169,44 @@ hr {
     }
   }
 }
+#moveUp,
+#moveDown {
+  background: transparent;
+  outline: none;
+  left: 45px !important;
+}
 
 #moveUp {
   position: fixed;
   z-index: 99;
   left: 0;
-  top: 0;
+  top: 75%;
 }
 #moveDown {
   position: fixed;
   z-index: 99;
   right: 0;
-  top: 0;
+  top: 82%;
+}
+#fp-nav {
+  left: 42px !important;
+  margin-top: -20% !important;
+  height: 46vh;
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    li {
+      span {
+        background: #a68e52 !important;
+        box-shadow: 0px 0px 10px rgba(166, 142, 82, 0.7);
+        border: none !important;
+        width: 3px !important;
+        height: 3px !important;
+      }
+    }
+  }
 }
 body.fp-viewing-block1 #fp-nav {
   display: none;
