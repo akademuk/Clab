@@ -5,6 +5,10 @@ $(document).ready(function () {
     css3: true,
     navigation: true,
     navigationPosition: "left",
+    loopBottom: true,
+    navigationTooltips: [" ", "галерея", "планировки", "документы", "контакты"],
+    showActiveTooltip: true,
+    slidesNavigation: true,
   });
 });
 

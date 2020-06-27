@@ -1,14 +1,9 @@
-/* Основные стили */
-
-/* Слайдер */
 .slick-slider {
   min-width: 0;
 }
-/* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
 }
-/* Лента слайдов */
 .slick-track {
   display: flex;
   align-items: flex-start;
@@ -180,18 +175,18 @@ hr {
   position: fixed;
   z-index: 99;
   left: 0;
-  top: 75%;
+  top: 60%;
 }
 #moveDown {
   position: fixed;
   z-index: 99;
   right: 0;
-  top: 82%;
+  top: 70%;
 }
 #fp-nav {
-  left: 30px !important;
-  margin-top: -20% !important;
+  left: 33px !important;
   height: 46vh;
+  top: 30% !important;
   ul {
     height: 100%;
     display: flex;
@@ -200,14 +195,19 @@ hr {
     li {
       width: 100%;
       height: 100%;
-      span {
-        background: #a68e52 !important;
-        box-shadow: 0px 0px 10px rgba(166, 142, 82, 0.7);
-        border: none !important;
-        width: 3px !important;
-        height: 3px !important;
-        top: 10px !important;
-        left: 11px !important;
+      a {
+        margin-left: -3px;
+        width: 30px;
+        height: 30px;
+        span {
+          background: #a68e52 !important;
+          box-shadow: 0px 0px 10px rgba(166, 142, 82, 0.7);
+          border: none !important;
+          width: 3px !important;
+          height: 3px !important;
+          top: 10px !important;
+          left: 11px !important;
+        }
       }
       .active {
         background: #dddddd;
@@ -219,7 +219,6 @@ hr {
         border: 0.5px solid #a68e52;
         border-radius: 50%;
         margin-left: -3px;
-
         span {
           width: 20px !important;
           height: 20px !important;
@@ -243,6 +242,11 @@ hr {
             top: 50%;
             margin-top: -3px;
           }
+        }
+      }
+      &:hover {
+        .fp-tooltip {
+          opacity: 0;
         }
       }
     }
@@ -290,14 +294,20 @@ body.fp-viewing-block1 #fp-nav {
   top: 0;
   right: -1%;
   z-index: 1;
-  .slider__item {
-    width: 965px !important;
+  .slick-list {
     height: 100%;
-    img {
-      min-width: 100%;
-      width: 100%;
-      object-fit: fill;
+    .slick-track {
       height: 100%;
+      .slider__item {
+        width: 100%;
+        height: 100%;
+        img {
+          min-width: 100%;
+          width: 100%;
+          object-fit: fill;
+          height: 100%;
+        }
+      }
     }
   }
 }
@@ -311,26 +321,41 @@ body.fp-viewing-block1 #fp-nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background: #e5e5e5;
+  background: #f1f1f1;
 }
 .slider-nav {
+  .slick-arrow {
+    position: absolute;
+    bottom: 28px;
+    z-index: 3;
+    background: red;
+    font-size: 0;
+    outline: none;
+  }
   .slick-prev {
-    left: 30%;
-    top: 50%;
+    left: -25%;
+    background: url(../../img/gallery-prev.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 7px;
   }
   .slick-next {
-    left: 35%;
-    top: 50%;
+    left: -15%;
+    background: url(../../img/gallery-next.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 7px;
   }
 }
 .slider-nav {
-  max-width: 56%;
-  width: 100%;
-  margin-top: -4%;
-
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
   .slider__item {
     display: flex;
-    width: 166px !important;
     height: 103px !important;
     display: flex;
     align-items: flex-end;
@@ -344,37 +369,51 @@ body.fp-viewing-block1 #fp-nav {
     }
   }
   .slider__item.slick-current.slick-active {
-    margin: 0 10px !important;
+    transition: all 0.3s linear;
+    width: 25% !important;
     img {
       object-fit: cover;
-      width: 166px !important;
+      width: 100% !important;
       height: 103px !important;
       transition: all 0.5s linear;
     }
   }
 }
+
 .slider-nav {
   padding-left: 20px;
+  width: 51.2%;
   .slider__item {
-    width: 20%;
-    height: 20vh !important;
+    width: 19% !important;
     img {
       width: 100%;
     }
   }
   .slick-dots {
-    top: 50%;
+    position: absolute;
+    left: -60%;
+    bottom: 27px;
     height: 10px;
+    z-index: 5;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
     li {
       button {
-        height: 8px;
+        font-size: 0;
+        background: #dddddd;
         width: 8px;
-        background: #ddd;
+        height: 8px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
       }
     }
     .slick-active {
+      border: none;
+      outline: none;
       button {
-        background: #a68e52;
+        background: #a68e52 !important;
       }
     }
   }
@@ -415,8 +454,27 @@ body.fp-viewing-block1 #fp-nav {
   line-height: 1.5;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
   cursor: pointer;
-
-  top: 1px;
+  position: absolute;
+  z-index: 6;
+  bottom: 9vh;
+  left: 34%;
+  width: 14.8%;
+  height: 44px;
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 26px;
+  color: #212224;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:nth-of-type(1) {
+    left: 0;
+    width: 34.3%;
+    justify-content: flex-end;
+    padding-right: 76px;
+  }
 }
 .tabs > input[type="radio"]:checked + label {
   background-color: #fff;
@@ -426,13 +484,67 @@ body.fp-viewing-block1 #fp-nav {
   width: 44%;
   height: 10vh;
   background: #fdfbfb;
-  box-shadow: 0px 5px 60px rgba(55, 55, 55, 0.2);
+  box-shadow: 12px 1px 8px -1px rgba(55, 55, 55, 0.2);
+
+  position: absolute;
+  left: 0;
+  width: 48.8%;
+  z-index: 2;
 }
 .section {
   text-align: center;
   font-size: 3em;
 }
-
-/**
-  Fixed button outside the fullpage.js wrapper
-  */
+.fp-tooltip {
+  font-family: HelveticaNeueCyr !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 10px !important;
+  line-height: 26px !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  color: #757575 !important;
+  margin-left: 20px !important;
+  margin-top: 5px !important;
+}
+.gallery {
+  position: relative;
+}
+#gallery_tabs1,
+#gallery_tabs2 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  background: url(../../img/tree.png);
+  background-position: left -30%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .tabs > label {
+    left: 30%;
+    width: 18.8%;
+    &:nth-of-type(1) {
+      width: 30.3%;
+    }
+  }
+  .slider-nav {
+    .slick-dots {
+      left: -90%;
+    }
+  }
+  .slider-nav {
+    .slick-prev {
+      left: -50%;
+    }
+    .slick-next {
+      left: -35%;
+    }
+  }
+  .slider-for {
+    width: 80%;
+  }
+}

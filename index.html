@@ -16,25 +16,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
+  <!--preloader-------------------------------------------------------->
     <div class="preloader">
       <div class="preloader__row">
         <div class="preloader__item"></div>
         <div class="preloader__item"></div>
       </div>
     </div>
-    <button id="moveUp" class="up"><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <!--button--moveUp------moveDown------------------------------------------------>
+    <button id="moveUp" class="up">
+      <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M5.12798 1L1.71193 4.37051L5.12798 4.37051L8.54404 4.37051L5.12798 1Z" fill="#757575"/>
       <path d="M5.12799 15.3474L5.12798 1M5.12798 1L1.71193 4.37051L8.54404 4.37051L5.12798 1Z" stroke="#757575" stroke-width="0.683211"/>
       </svg>
-      </button>
+    </button>
     <button id="moveDown" class="down"><svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M5.12797 14.3474L8.54402 10.9769L5.12797 10.9769L1.71191 10.9769L5.12797 14.3474Z" fill="#757575"/>
       <path d="M5.12797 -2.16955e-05L5.12797 14.3474M5.12797 14.3474L8.54402 10.9769L1.71191 10.9769L5.12797 14.3474Z" stroke="#757575" stroke-width="0.683211"/>
       </svg>
-      </button>
+    </button>
     <div id="fullpage">
-      <!--Section----------------------------------------------------------------------------->
-      <section class="section header" data-anchor="block1">
+      <!--Section header----------------------------------------------------------------------------->
+      <section class="section header" data-anchor="block1" id="section1">
         <div class="header_contact">
           <div class="header_contact_number">
             <a href="tel:88007751277">8 (800) 77-512-77</a>
@@ -169,15 +172,14 @@
             </div>
         </div>
       </section>
-      
       <!--Section gallery----------------------------------------------------------------------------->
-      <section class="section gallery" data-anchor="block2">
+      <section class="section gallery" data-anchor="block2" id="section2">
         <div class="tabs">
           <!--------Tabs--------------------------------------->
          <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
-         <label for="tab-btn-1">Вкладка 1</label>
+         <label for="tab-btn-1">КЛУБНЫЙ ДОМ</label>
          <input type="radio" name="tab-btn" id="tab-btn-2" value="">
-         <label for="tab-btn-2">Вкладка 2</label>
+         <label for="tab-btn-2">КЛАБ РЕЗИДЕНС</label>
           <!--------------------------------------------------->
      
        
@@ -187,22 +189,22 @@
              <img src="img/header_bg.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/big-gallery.jpg" alt="">
+             <img src="img/header_bg.jpg" alt="">
            </div>
            <div class="slider__item filter">
-             <img src="img/big-gallery.jpg" alt="">
+             <img src="img/header_bg.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/big-gallery.jpg" alt="">
+             <img src="img/header_bg.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/big-gallery.jpg" alt="">
+             <img src="img/header_bg.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/big-gallery.jpg" alt="">
+             <img src="img/header_bg.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/big-gallery.jpg" alt="">
+             <img src="img/header_bg.jpg" alt="">
            </div>
          </div>
        <div class="slider-container">
@@ -212,22 +214,22 @@
              <img src="img/header_bg.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/small-gallery.jpg" alt="">
+             <img src="img/header_bg.jpg" alt="">
            </div>
            <div class="slider__item filter">
-             <img src="img/small-gallery.jpg" alt="">
+             <img src="img/header_bg.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/small-gallery.jpg" alt="">
+             <img src="img/header_bg.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/small-gallery.jpg" alt="">
+             <img src="img/header_bg.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/small-gallery.jpg" alt="">
+             <img src="img/header_bg.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/small-gallery.jpg" alt="">
+             <img src="img/header_bg.jpg" alt="">
            </div>
          </div> 
        </div>
@@ -239,19 +241,19 @@
              <img src="img/header_bg2.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/small-gallery.jpg" alt="">
+             <img src="img/header_bg2.jpg" alt="">
            </div>
            <div class="slider__item filter">
              <img src="img/header_bg2.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/small-gallery.jpg" alt="">
+             <img src="img/header_bg2.jpg" alt="">
            </div>
            <div class="slider__item">
              <img src="img/header_bg2.jpg" alt="">
            </div>
            <div class="slider__item">
-             <img src="img/small-gallery.jpg" alt="">
+             <img src="img/header_bg2.jpg" alt="">
            </div>
            <div class="slider__item">
              <img src="img/header_bg2.jpg" alt="">
@@ -264,19 +266,19 @@
                <img src="img/header_bg2.jpg" alt="">
              </div>
              <div class="slider__item">
-               <img src="img/small-gallery.jpg" alt="">
+               <img src="img/header_bg2.jpg" alt="">
              </div>
              <div class="slider__item filter">
                <img src="img/header_bg2.jpg" alt="">
              </div>
              <div class="slider__item">
-               <img src="img/small-gallery.jpg" alt="">
+               <img src="img/header_bg2.jpg" alt="">
              </div>
              <div class="slider__item">
                <img src="img/header_bg2.jpg" alt="">
              </div>
              <div class="slider__item">
-               <img src="img/small-gallery.jpg" alt="">
+               <img src="img/header_bg2.jpg" alt="">
              </div>
              <div class="slider__item">
                <img src="img/header_bg2.jpg" alt="">
@@ -286,11 +288,11 @@
        </div>
       </section>
       <!--Section plan----------------------------------------------------------------------------->
-      <section class="section plan" data-anchor="block3">3</section>
+      <section class="section plan" data-anchor="block3" id="section3">3</section>
       <!--Section document----------------------------------------------------------------------------->
-      <section class="section document" data-anchor="block4">4</section>
+      <section class="section document" data-anchor="block4" id="section4">4</section>
       <!--Section salesOffice----------------------------------------------------------------------------->
-      <section class="section salesOffice" data-anchor="block5">
+      <section class="section salesOffice" data-anchor="block5" id="section5">
         5
         <footer></footer>
       </section>
@@ -306,7 +308,7 @@
       }
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-   <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
     <script src="js/slick.min.js"></script>
