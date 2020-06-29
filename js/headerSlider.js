@@ -35,6 +35,13 @@ $(document).ready(function () {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
     ],
   });
 });
