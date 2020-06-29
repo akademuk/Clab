@@ -1085,7 +1085,7 @@ body.fp-viewing-block1 #fp-nav {
   .slider-container {
     top: 50vh;
     flex-direction: column;
-    height: 60vh;
+    height: 40vh;
   }
   .tabs > label {
     width: 50% !important;
@@ -1105,20 +1105,20 @@ body.fp-viewing-block1 #fp-nav {
   }
   .slider-nav {
     width: 100%;
-    bottom: 20vh;
+    bottom: 0;
   }
   .slider-nav .slick-dots {
     width: 50% !important;
     left: 25%;
-    top: -12vh;
+    top: -13vh;
   }
   .slider-nav .slick-next {
     left: 60%;
-    top: -5vh;
+    top: -7vh;
   }
   .slider-nav .slick-prev {
     left: 30%;
-    top: -5vh;
+    top: -7vh;
   }
   .slider-nav .slider__item {
     width: 50% !important;
@@ -1152,7 +1152,7 @@ body.fp-viewing-block1 #fp-nav {
     left: 13px !important;
   }
   #moveUp {
-    top: 50%;
+    top: 55%;
   }
   #moveDown {
     top: 60%;
