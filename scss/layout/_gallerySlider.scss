@@ -540,19 +540,19 @@ body.fp-viewing-block1 #fp-nav {
 }
 @media (max-width: 768px) {
   .slider-for {
-    height: 40vh;
+    height: 50vh;
     width: 100% !important;
     right: 0;
   }
   .slider-container {
-    top: 40vh;
+    top: 50vh;
     flex-direction: column;
     height: 40vh;
   }
   .tabs > label {
     width: 50% !important;
     left: 0;
-    top: 40vh;
+    top: 50vh;
     z-index: 11;
     padding-right: 0 !important;
     display: flex;
@@ -573,7 +573,7 @@ body.fp-viewing-block1 #fp-nav {
     .slick-dots {
       width: 50% !important;
       left: 25%;
-      top: -12vh;
+      top: -14vh;
     }
     .slick-next {
       left: 60%;
