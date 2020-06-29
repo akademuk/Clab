@@ -540,19 +540,19 @@ body.fp-viewing-block1 #fp-nav {
 }
 @media (max-width: 768px) {
   .slider-for {
-    height: 50vh;
+    height: 40vh;
     width: 100% !important;
     right: 0;
   }
   .slider-container {
-    top: 50vh;
+    top: 40vh;
     flex-direction: column;
     height: 40vh;
   }
   .tabs > label {
     width: 50% !important;
     left: 0;
-    top: 50vh;
+    top: 40vh;
     z-index: 11;
     padding-right: 0 !important;
     display: flex;
