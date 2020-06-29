@@ -1157,6 +1157,41 @@ body.fp-viewing-block1 #fp-nav {
   }
 }
 
+@media screen and (orientation: landscape) and (min-device-height: 319px) and (max-device-height: 650px) {
+  .slider-for {
+    width: 70% !important;
+  }
+  .tabs > label {
+    height: 24px !important;
+  }
+  .slider-nav {
+    width: 95%;
+  }
+  .slider-nav .slick-prev {
+    left: 15%;
+    top: -13vh;
+  }
+  .slider-nav .slick-dots {
+    left: 44%;
+  }
+  .slider-nav .slick-next {
+    left: 80%;
+    top: -13vh;
+  }
+  .slider-nav .slider__item img {
+    object-fit: scale-down;
+  }
+  .slider-nav .slider__item.slick-current.slick-active img {
+    object-fit: scale-down;
+  }
+  #moveDown {
+    top: 85%;
+  }
+  #moveUp {
+    top: 75%;
+  }
+}
+
 .preloader {
   position: fixed;
   left: 0;
