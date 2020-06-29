@@ -680,7 +680,6 @@ hr::after {
 #moveDown {
   position: fixed;
   z-index: 99;
-  right: 0;
   top: 70%;
 }
 
@@ -849,14 +848,13 @@ body.fp-viewing-block1 #fp-nav {
   position: absolute;
   bottom: 28px;
   z-index: 3;
-  background: red;
   font-size: 0;
   outline: none;
 }
 
 .slider-nav .slick-prev {
   left: -25%;
-  background: url(../../img/gallery-prev.png);
+  background: url(../img/gallery-prev.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 50px;
@@ -865,7 +863,7 @@ body.fp-viewing-block1 #fp-nav {
 
 .slider-nav .slick-next {
   left: -15%;
-  background: url(../../img/gallery-next.png);
+  background: url(../img/gallery-next.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 50px;
@@ -1107,20 +1105,20 @@ body.fp-viewing-block1 #fp-nav {
   }
   .slider-nav {
     width: 100%;
-    bottom: 15vh;
+    bottom: 20vh;
   }
   .slider-nav .slick-dots {
     width: 50% !important;
     left: 25%;
-    top: -17vh;
+    top: -12vh;
   }
   .slider-nav .slick-next {
     left: 60%;
-    top: -10vh;
+    top: -5vh;
   }
   .slider-nav .slick-prev {
     left: 30%;
-    top: -10vh;
+    top: -5vh;
   }
   .slider-nav .slider__item {
     width: 50% !important;
@@ -1139,7 +1137,12 @@ body.fp-viewing-block1 #fp-nav {
     height: 100% !important;
   }
   #fp-nav {
-    left: 5px !important;
+    left: 0 !important;
+    margin-top: 0 !important;
+    height: 50vh !important;
+    background: white;
+    top: 0 !important;
+    padding-left: 5px;
   }
   #fp-nav ul li .fp-tooltip {
     color: #fff !important;
@@ -1147,6 +1150,19 @@ body.fp-viewing-block1 #fp-nav {
   #moveUp,
   #moveDown {
     left: 13px !important;
+  }
+  #moveUp {
+    top: 50%;
+  }
+  #moveDown {
+    top: 60%;
+  }
+  #fp-nav ul li .fp-tooltip {
+    background: white;
+    padding: 5px 10px !important;
+    left: 30% !important;
+    top: -12% !important;
+    color: #a68e52 !important;
   }
 }
 
