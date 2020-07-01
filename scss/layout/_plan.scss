@@ -1,4 +1,226 @@
 .plan {
-  height: 100vh;
-  background: green;
+  background: url(../../img/plan-bg.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70%;
+  .wrapper {
+    width: 65vw;
+    margin: 0 auto;
+    height: 76vh;
+
+    .wrapper-bg {
+      background: #ffffff;
+      box-shadow: 0px 8px 20px rgba(33, 34, 36, 0.1);
+      position: relative;
+    }
+  }
+}
+.tab {
+  overflow: hidden;
+  background: #ffffff;
+  height: 44px;
+  display: flex;
+  justify-content: end;
+}
+.tab button {
+  font-size: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+  transition: 0.3s;
+  width: 15%;
+  color: #212224;
+  background: #f1f1f1;
+  height: 44px;
+  text-transform: uppercase;
+  &:nth-of-type(1) {
+    padding-left: 30px;
+  }
+}
+.tab button.active {
+  color: #a68e52;
+  width: 60%;
+  text-align: left;
+  background: #fff;
+  padding-left: 20px;
+}
+.tabcontent {
+  display: none;
+  padding: 0 50px 0 0;
+  height: 60vh !important;
+  width: 100% !important;
+}
+.tabcontent {
+  animation: fadeEffect 1s;
+}
+.js-slider-control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  left: 5%;
+  font-size: 0;
+  height: 44px;
+  margin: 0;
+  width: 50%;
+  .slick-list {
+    padding: 0;
+    .slick-track {
+      width: 100% !important;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      outline: none;
+      li {
+        width: 10% !important;
+        outline: none;
+        a {
+          font-size: 12px;
+          line-height: 26px;
+          color: #757575;
+          opacity: 0.7;
+          text-transform: uppercase;
+          outline: none;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#room2 {
+  .js-slider-control {
+    left: 20%;
+    .slick-slide {
+      width: 100% !important;
+    }
+  }
+}
+
+#room3 {
+  .js-slider-control {
+    left: 35%;
+    .slick-slide {
+      width: 100% !important;
+    }
+  }
+}
+
+#withTerraces {
+  .js-slider-control {
+    left: auto;
+    right: 0;
+    .slick-slide {
+      width: 100% !important;
+    }
+  }
+}
+.js-event-slider-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.slider-img {
+  width: 30%;
+  height: 100%;
+  padding: 0 0 55px 54px;
+  margin-right: 88px;
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+.js-event-slider {
+  height: 100%;
+  width: 100%;
+  .slick-list {
+    height: 100% !important;
+    width: 100% !important;
+    .slick-track {
+      height: 100%;
+      .slick-slide {
+        height: 100%;
+        outline: none;
+      }
+    }
+  }
+}
+.slider-info {
+  width: 60%;
+}
+.slider-info-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 30px 30px;
+  box-shadow: 0px 8px 20px rgba(33, 34, 36, 0.05);
+  .slider-info-text-left,
+  .slider-info-text-right {
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 26px;
+      color: #757575;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      span {
+        font-size: 12px;
+        line-height: 26px;
+        color: #212224;
+        display: flex;
+        width: 20%;
+      }
+    }
+  }
+}
+.slider-info-text-left {
+  width: 55%;
+  padding-right: 29px;
+  border-right: 0.5px solid #dddddd;
+}
+.slider-info-text-right {
+  width: 45%;
+  padding-left: 29px;
+}
+.slider-contact-info {
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
+}
+.slider-contact {
+  font-family: "helveticaRegular";
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34px;
+}
+.slider-contact-container-number {
+  font-family: "helveticaRegular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #8a8a8a;
+  margin-right: 25%;
+  font-weight: 400;
+  a {
+    font-family: "helveticaRegular";
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+  }
+}
+.slick-slide .slick-current .slick-center {
+  a {
+    color: #000;
+  }
 }

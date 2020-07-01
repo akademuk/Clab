@@ -9,6 +9,7 @@ $(document).ready(function () {
   $(".slider-for").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    swipe: false,
     arrows: false,
     fade: true,
     asNavFor: ".slider-nav",
@@ -44,4 +45,24 @@ $(document).ready(function () {
       },
     ],
   });
+});
+
+$(".js-event-slider").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  autoplay: false,
+  adaptiveHeight: true,
+  swipe: false,
+  asNavFor: ".js-slider-control",
+});
+$(".js-slider-control").slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+  asNavFor: ".js-event-slider",
 });

@@ -3,6 +3,15 @@
   src: url(../../fonts/helveticaneuecyr-bold.woff2) format("woff"),
     url(../../fonts/helveticaneuecyr-bold.ttf) format("true-type"),
     url(../../fonts/helveticaneuecyr-bold.eot) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helveticaRegular";
+  src: url(../../fonts/HelveticaNeue-CondensedRegular.woff) format("woff"),
+    url(../../fonts/HelveticaNeue-CondensedRegular.ttf) format("true-type"),
+    url(../../fonts/HelveticaNeue-CondensedRegular) format("opentype");
   font-weight: 400;
   font-style: normal;
 }
