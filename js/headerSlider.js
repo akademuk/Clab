@@ -50,19 +50,17 @@ $(document).ready(function () {
 $(".js-event-slider").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
-  dots: false,
-  autoplay: false,
-  adaptiveHeight: true,
-  swipe: false,
+  dots: true,
+  arrows: true,
+  fade: true,
+  centerMode: false,
   asNavFor: ".js-slider-control",
 });
 $(".js-slider-control").slick({
   slidesToShow: 6,
   slidesToScroll: 1,
-  arrows: true,
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true,
   asNavFor: ".js-event-slider",
+  arrows: false,
+  fade: false,
+  focusOnSelect: true,
 });

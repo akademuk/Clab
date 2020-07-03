@@ -8,12 +8,11 @@
   .wrapper {
     width: 65vw;
     margin: 0 auto;
-    height: 76vh;
-
     .wrapper-bg {
       background: #ffffff;
       box-shadow: 0px 8px 20px rgba(33, 34, 36, 0.1);
       position: relative;
+      height: 76vh;
     }
   }
 }
@@ -61,22 +60,26 @@
   top: 0;
   right: 0;
   z-index: 99;
-  left: 5%;
+  left: 10%;
   font-size: 0;
   height: 44px;
   margin: 0;
   width: 50%;
   .slick-list {
-    padding: 0;
+    padding: 0 !important;
     .slick-track {
-      width: 100% !important;
+      max-width: 100%;
+      width: 90% !important;
       display: flex;
+      overflow: hidden;
       justify-content: space-between;
       align-items: center;
       outline: none;
+      transform: translate3d(0px, 0px, 0px) !important;
       li {
-        width: 10% !important;
+        width: 20% !important;
         outline: none;
+        margin-right: 10px;
         a {
           font-size: 12px;
           line-height: 26px;
@@ -101,7 +104,7 @@
 }
 #room2 {
   .js-slider-control {
-    left: 20%;
+    left: 25%;
     .slick-slide {
       width: 100% !important;
     }
@@ -110,7 +113,7 @@
 
 #room3 {
   .js-slider-control {
-    left: 35%;
+    left: 40%;
     .slick-slide {
       width: 100% !important;
     }
@@ -120,7 +123,7 @@
 #withTerraces {
   .js-slider-control {
     left: auto;
-    right: 0;
+    right: -5%;
     .slick-slide {
       width: 100% !important;
     }
@@ -128,22 +131,26 @@
 }
 .js-event-slider-container {
   display: flex;
+  justify-content: space-between;
   height: 100%;
   width: 100%;
 }
 .slider-img {
-  width: 30%;
-  height: 100%;
-  padding: 0 0 55px 54px;
-  margin-right: 88px;
+  width: 40%;
+  height: 95%;
+  padding-left: 54px;
+  padding-top: 20px;
   img {
-    object-fit: contain;
+    object-fit: fill;
     width: 100%;
     height: 100%;
   }
 }
+.position-container {
+  position: relative;
+}
 .js-event-slider {
-  height: 100%;
+  height: 65vh;
   width: 100%;
   .slick-list {
     height: 100% !important;
@@ -156,39 +163,85 @@
       }
     }
   }
+  .slick-dots {
+    position: absolute;
+    left: 48%;
+    bottom: 0;
+    height: 10px;
+    z-index: 1000;
+    display: flex;
+    width: 200px !important;
+    justify-content: space-between;
+    li {
+      button {
+        font-size: 0;
+        background: #dddddd;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+    .slick-active {
+      border: none;
+      outline: none;
+      button {
+        background: #a68e52 !important;
+      }
+    }
+  }
+  .slick-arrow {
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    bottom: -10px;
+    height: 7px;
+    outline: none;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 0;
+  }
+  .slick-prev {
+    background: url(../../img/gallery-prev.png);
+    right: 17%;
+  }
+  .slick-next {
+    background: url(../../img/gallery-next.png);
+    right: 9%;
+  }
 }
 .slider-info {
   width: 60%;
+  margin-top: 25px;
 }
 .slider-info-text {
+  height: 130px;
   display: flex;
-  justify-content: space-between;
-  padding: 0 30px 30px 30px;
+  justify-content: flex-end;
+  padding: 0 0 30px 0;
   box-shadow: 0px 8px 20px rgba(33, 34, 36, 0.05);
   .slider-info-text-left,
   .slider-info-text-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     p {
-      font-weight: 400;
       font-size: 12px;
       line-height: 26px;
-      color: #757575;
+      color: #212224;
       margin-bottom: 0;
       display: flex;
-      justify-content: space-between;
-      span {
-        font-size: 12px;
-        line-height: 26px;
-        color: #212224;
-        display: flex;
-        width: 20%;
-      }
+      flex-direction: column;
+      align-items: flex-end;
     }
   }
 }
 .slider-info-text-left {
-  width: 55%;
+  width: 45%;
   padding-right: 29px;
-  border-right: 0.5px solid #dddddd;
 }
 .slider-info-text-right {
   width: 45%;
@@ -219,8 +272,292 @@
     color: black;
   }
 }
-.slick-slide .slick-current .slick-center {
-  a {
-    color: #000;
+.apartment-layout {
+  position: absolute;
+  top: 93px;
+  left: 47%;
+  z-index: 1001;
+  width: 55%;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 30px 0;
+
+  .slider-info-text-left,
+  .slider-info-text-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 26px;
+      color: #757575;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .slider-info-text-right {
+    border-left: 0.5px solid #dddddd;
+  }
+}
+.js-slider-control {
+  .slick-slide.slick-current.slick-active {
+    a {
+      color: #212224;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .js-slider-control {
+    left: 15%;
+    .slick-list {
+      .slick-track {
+        width: 75% !important;
+        li {
+          a {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  .js-event-slider {
+    .slick-next {
+      right: 0;
+    }
+    .slick-prev {
+      right: 10%;
+    }
+    .slick-dots {
+      width: 150px;
+    }
+  }
+  .plan {
+    .wrapper {
+      width: 80%;
+      margin-left: 17%;
+    }
+  }
+}
+@media (max-width: 992px) {
+  #fp-nav {
+    left: 0 !important;
+  }
+  #moveUp,
+  #moveDown {
+    left: 10px !important;
+  }
+  .js-slider-control {
+    top: 44px;
+    width: 100%;
+    left: 15%;
+  }
+  .js-event-slider {
+    margin-top: 20px;
+  }
+  .tab {
+    button {
+      width: 25% !important;
+      text-align: center;
+    }
+    .active {
+      width: 25% !important;
+      text-align: center !important;
+    }
+  }
+  #room2 {
+    .js-slider-control {
+      left: 15%;
+    }
+  }
+
+  #room3 {
+    .js-slider-control {
+      left: 15%;
+    }
+  }
+
+  #withTerraces {
+    .js-slider-control {
+      left: 15%;
+      right: 0;
+    }
+  }
+  .slider-img {
+    height: 75%;
+    width: 30%;
+    padding-left: 25px;
+  }
+  .js-event-slider-container {
+    justify-content: flex-start;
+  }
+  .apartment-layout {
+    left: 35% !important;
+    width: 70%;
+  }
+  .tabcontent {
+    padding-right: 25px !important;
+  }
+  .slider-info {
+    width: 70%;
+  }
+  .js-event-slider {
+    .slick-dots {
+      bottom: 10%;
+      left: 5%;
+    }
+    .slick-arrow {
+      bottom: 7%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .fp-tooltip {
+    display: none !important;
+  }
+  .plan {
+    .wrapper {
+      width: 90%;
+      margin-left: 40px;
+    }
+  }
+  .slider-img {
+    height: 50%;
+  }
+  h3 {
+    font-size: 25px;
+    line-height: 25px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+  }
+  .apartment-layout {
+    top: 65px;
+    .slider-info-text-left,
+    .slider-info-text-right {
+      p {
+        font-size: 10px;
+        line-height: 10px;
+      }
+    }
+    .slider-info-text-left {
+      padding-right: 10px;
+    }
+    .slider-info-text-right {
+      padding-left: 10px;
+      border-left: none;
+    }
+  }
+  .slider-info-text {
+    .slider-info-text-left,
+    .slider-info-text-right {
+      p {
+        font-size: 10px;
+        line-height: 10px;
+      }
+    }
+  }
+  .js-event-slider {
+    .slick-prev {
+      right: 25%;
+    }
+    .slick-next {
+      right: 15%;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .slider-info-text {
+    justify-content: inherit;
+    height: 150px;
+    box-shadow: none !important;
+    .slider-info-text-left,
+    .slider-info-text-right {
+      align-items: center;
+    }
+  }
+  .apartment-layout {
+    top: 65px;
+    left: 43% !important;
+    height: 150px;
+    box-shadow: none !important;
+    .slider-info-text-left {
+      p {
+        margin-left: 17px;
+      }
+    }
+  }
+  h3 {
+    margin-bottom: 30px;
+  }
+  .slider-img {
+    width: 50%;
+  }
+  .js-event-slider {
+    .slick-next {
+      right: 0;
+    }
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .tab {
+    height: 30px;
+    button {
+      font-size: 7px;
+      height: 24px;
+      padding: 0;
+    }
+    .active {
+      padding-left: 0 !important;
+    }
+  }
+  .plan {
+    .wrapper {
+      margin-right: 40px;
+      width: auto;
+    }
+  }
+  .js-slider-control {
+    left: 5%;
+    top: 15px;
+    width: 90%;
+    .slick-list {
+      .slick-track {
+        width: 100% !important;
+        li {
+          a {
+            font-size: 6px;
+          }
+        }
+      }
+    }
+  }
+  .slider-img {
+    padding-left: 5px;
+    height: 30%;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  .js-event-slider-container {
+    flex-direction: column;
+  }
+  .apartment-layout {
+    top: auto;
+    bottom: 12%;
+    width: 100%;
+    left: -2% !important;
+  }
+  .slider-info {
+    width: 100%;
+    margin-top: 10px;
+  }
+  h3 {
+    font-size: 16px;
   }
 }

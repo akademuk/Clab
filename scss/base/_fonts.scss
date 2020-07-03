@@ -1,6 +1,6 @@
 @font-face {
   font-family: "helveticaBold";
-  src: url(../../fonts/helveticaneuecyr-bold.woff2) format("woff"),
+  src: url(../../fonts/helveticaneuecyr-bold.woff2) format("woff2"),
     url(../../fonts/helveticaneuecyr-bold.ttf) format("true-type"),
     url(../../fonts/helveticaneuecyr-bold.eot) format("opentype");
   font-weight: bold;
@@ -9,9 +9,14 @@
 
 @font-face {
   font-family: "helveticaRegular";
-  src: url(../../fonts/HelveticaNeue-CondensedRegular.woff) format("woff"),
-    url(../../fonts/HelveticaNeue-CondensedRegular.ttf) format("true-type"),
-    url(../../fonts/HelveticaNeue-CondensedRegular) format("opentype");
-  font-weight: 400;
+  src: url(../../fonts/helveticaNeue-CondensedRegular.woff) format("woff");
+  src: url(../../fonts/helveticaNeue-CondensedRegular.ttf) format("true-type");
+  src: url(../../fonts/helveticaNeue-CondensedRegular.eot) format("opentype");
+  font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "fontawesome";
+  src: url(../../fonts/fontawesome-webfont.woff) format("woff");
 }
