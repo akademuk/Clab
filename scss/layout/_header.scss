@@ -533,6 +533,11 @@
   }
   .header_nav_footer_container {
     font-size: 9px;
+    p {
+      &:nth-of-type(1) {
+        margin-right: 10px;
+      }
+    }
   }
   .modal-body {
     h4 {
@@ -589,31 +594,46 @@
     }
   }
 }
-@media screen and (orientation: landscape) and (min-device-height: 319px) and (max-device-height: 650px) {
+@media screen and (orientation: landscape) and (min-device-height: 319px) and (max-device-height: 375px) {
   .header {
     .slider {
       .slick-arrow {
-        left: auto;
-        right: 5%;
-        bottom: 5%;
+        left: 10% !important;
+        right: auto;
+        bottom: 25% !important;
       }
-      .slick-prev {
-        right: 10%;
+      .slick-next {
+        left: 20% !important;
+        right: auto;
       }
       .slick-dots {
-        left: auto !important;
-        right: 20% !important;
-        bottom: 5% !important;
+        display: none !important;
       }
     }
   }
   .header_tittle {
-    margin-top: calc(5% - 5vh);
+    margin-top: -10%;
     h1 {
       span {
         font-size: 55px;
         line-height: 55px;
       }
     }
+  }
+  .header_nav_footer_container {
+    margin-left: 10px;
+  }
+  .header-logotype {
+    right: 15px;
+    bottom: 15px;
+  }
+  .header_contact {
+    margin-top: -2%;
+  }
+  .header_contact_number {
+    font-size: 15px;
+  }
+  .glyphicon {
+    font-size: 15px;
   }
 }
