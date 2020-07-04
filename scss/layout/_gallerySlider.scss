@@ -362,8 +362,8 @@ body.fp-viewing-block1 #fp-nav {
   #fp-nav {
     left: 0 !important;
     margin-top: 0 !important;
-    height: 50vh !important;
-
+    height: 100% !important;
+    max-height: 50vh !important;
     top: 0 !important;
     ul {
       li .fp-tooltip {
@@ -381,29 +381,8 @@ body.fp-viewing-block1 #fp-nav {
   #moveDown {
     top: 63%;
   }
-  #fp-nav {
-    ul {
-      li {
-        .fp-tooltip {
-          background: white;
-          padding: 5px 10px !important;
-          left: 30% !important;
-          top: -12% !important;
-          color: #a68e52 !important;
-        }
-      }
-    }
-  }
 }
-@media (max-width: 568px) {
-  #fp-nav {
-    ul {
-      –webkit-box: box;
-      -webkit-box-orient: column;
-      -webkit-box-pack: space-between;
-    }
-  }
-}
+
 @media screen and (orientation: landscape) and (min-device-height: 219px) and (max-device-height: 650px) {
   .slider-for {
     width: 70% !important;
