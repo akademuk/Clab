@@ -510,6 +510,7 @@
       font-size: 30px;
       line-height: 30px;
       margin-top: 10px;
+      margin-left: 15px;
     }
   }
   .form-horizontal {
@@ -527,11 +528,11 @@
     margin-left: 10px;
     width: 60%;
     margin-top: -10%;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
   .header-logotype {
     right: 15px;
-    top: 85vh;
+    top: 80vh;
     bottom: auto;
   }
   .header_nav_footer_container {
@@ -553,17 +554,21 @@
   .form-group {
     width: 100%;
   }
-  .header_contact_number {
-    .content {
-      button {
-        font-size: 8px;
-        line-height: 19px;
-      }
-    }
+
+  .close {
+    font-size: 8px !important;
+    line-height: 19px !important;
   }
   .modal-header {
     right: 15px;
     top: 15px;
+  }
+  .header_contact_number {
+    .content {
+      button {
+        font-size: 8px;
+      }
+    }
   }
 }
 
