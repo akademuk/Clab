@@ -383,9 +383,6 @@ body.fp-viewing-block1 #fp-nav {
   }
 }
 @media (max-width: 576px) {
-  .container_background {
-    height: 10vh;
-  }
   .slider-nav {
     .slick-arrow {
       top: -10vh !important;
@@ -395,10 +392,25 @@ body.fp-viewing-block1 #fp-nav {
     height: 50vh;
   }
   .slider-nav {
-    padding-bottom: 50px;
+    bottom: auto;
+    top: 10vh;
   }
   #moveDown {
     top: 60%;
+  }
+  .slider-for {
+    height: 40vh;
+  }
+  .slider-container {
+    top: 40vh;
+    padding-bottom: 10vh;
+    height: 60vh;
+  }
+  .container_background {
+    display: none;
+  }
+  .gallery label {
+    top: 40vh;
   }
 }
 @media screen and (orientation: landscape) and (min-device-height: 219px) and (max-device-height: 650px) {
