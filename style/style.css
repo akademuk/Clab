@@ -568,11 +568,12 @@ h3 {
     margin-left: 10px;
     width: 60%;
     margin-top: -10%;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
   .header-logotype {
     right: 15px;
-    bottom: 40px;
+    top: 85vh;
+    bottom: auto;
   }
   .header_nav_footer_container {
     font-size: 9px;
