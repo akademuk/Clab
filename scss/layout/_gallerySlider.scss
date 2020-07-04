@@ -39,7 +39,6 @@
     justify-content: space-between;
     li {
       width: 100%;
-      height: 100%;
       a {
         span {
           background: #a68e52;
@@ -424,6 +423,9 @@ body.fp-viewing-block1 #fp-nav {
   #fp-nav {
     height: 200px !important;
     background: red;
+    ul {
+      max-height: 100%;
+    }
   }
 }
 @media screen and (orientation: landscape) and (min-device-height: 219px) and (max-device-height: 650px) {
