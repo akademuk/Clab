@@ -382,7 +382,25 @@ body.fp-viewing-block1 #fp-nav {
     top: 63%;
   }
 }
-
+@media (max-width: 576px) {
+  .container_background {
+    height: 10vh;
+  }
+  .slider-nav {
+    .slick-arrow {
+      top: -10vh !important;
+    }
+  }
+  .slider-container {
+    height: 50vh;
+  }
+  .slider-nav {
+    padding-bottom: 50px;
+  }
+  #moveDown {
+    top: 60%;
+  }
+}
 @media screen and (orientation: landscape) and (min-device-height: 219px) and (max-device-height: 650px) {
   .slider-for {
     width: 70% !important;

@@ -1,5 +1,5 @@
 .plan {
-  background: url(../../img/plan-bg.png);
+  background: url(../img/plan-bg.png);
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -205,11 +205,11 @@
     font-size: 0;
   }
   .slick-prev {
-    background: url(../../img/gallery-prev.png);
+    background: url(../img/gallery-prev.png);
     right: 17%;
   }
   .slick-next {
-    background: url(../../img/gallery-next.png);
+    background: url(../img/gallery-next.png);
     right: 9%;
   }
 }
@@ -491,7 +491,7 @@
     }
   }
   h3 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .slider-img {
     width: 50%;
@@ -520,18 +520,20 @@
     .wrapper {
       margin-right: 40px;
       width: auto;
+      height: 100%;
     }
   }
   .js-slider-control {
-    left: 5%;
+    left: 4%;
+    right: 4%;
     top: 15px;
-    width: 90%;
+    width: 92%;
     .slick-list {
       .slick-track {
         width: 100% !important;
         li {
           a {
-            font-size: 6px;
+            font-size: 8px;
           }
         }
       }
@@ -540,7 +542,7 @@
   .slider-img {
     padding-left: 5px;
     height: 30%;
-    width: 75%;
+    width: 45%;
     margin: 0 auto;
     padding-top: 0;
   }
@@ -549,7 +551,7 @@
   }
   .apartment-layout {
     top: auto;
-    bottom: 12%;
+    bottom: 15%;
     width: 100%;
     left: -2% !important;
   }
@@ -559,5 +561,29 @@
   }
   h3 {
     font-size: 16px;
+  }
+  .tabcontent {
+    padding-right: 0 !important;
+  }
+  .tab {
+    button {
+      &:nth-of-type(1) {
+        padding-left: 0;
+      }
+    }
+  }
+  .js-event-slider {
+    .slick-prev {
+      left: 5%;
+      right: auto;
+      height: 10px;
+      bottom: 0;
+    }
+    .slick-next {
+      right: 5%;
+      left: auto;
+      height: 10px;
+      bottom: 0;
+    }
   }
 }

@@ -6,6 +6,16 @@ $(".js-event-slider").slick({
   fade: true,
   centerMode: false,
   asNavFor: ".js-slider-control",
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+      },
+    },
+  ],
 });
 $(".js-slider-control").slick({
   slidesToShow: 6,
