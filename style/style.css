@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "helveticaBold";
   src: url(../../fonts/helveticaneuecyr-bold.woff2) format("woff2"), url(../../fonts/helveticaneuecyr-bold.ttf) format("true-type"), url(../../fonts/helveticaneuecyr-bold.eot) format("opentype");
@@ -1068,6 +1069,13 @@ body.fp-viewing-block1 #fp-nav {
     left: 30% !important;
     top: -12% !important;
     color: #a68e52 !important;
+  }
+}
+
+@media (max-width: 568px) {
+  #fp-nav ul {
+    –webkit-box: box;
+    -webkit-box-pack: space-between;
   }
 }
 

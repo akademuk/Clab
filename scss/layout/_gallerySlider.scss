@@ -395,6 +395,15 @@ body.fp-viewing-block1 #fp-nav {
     }
   }
 }
+@media (max-width: 568px) {
+  #fp-nav {
+    ul {
+      –webkit-box: box;
+      -webkit-box-orient: column;
+      -webkit-box-pack: space-between;
+    }
+  }
+}
 @media screen and (orientation: landscape) and (min-device-height: 219px) and (max-device-height: 650px) {
   .slider-for {
     width: 70% !important;
