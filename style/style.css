@@ -1067,7 +1067,16 @@ body.fp-viewing-block1 #fp-nav {
 
 @media (max-width: 576px) {
   .slider-nav .slick-arrow {
-    top: -10vh !important;
+    top: auto;
+    bottom: -50% !important;
+  }
+  .slider-nav .slick-prev {
+    left: 25%;
+    right: auto;
+  }
+  .slider-nav .slick-next {
+    right: 25%;
+    left: auto;
   }
   .slider-container {
     height: 50vh;
@@ -1092,6 +1101,10 @@ body.fp-viewing-block1 #fp-nav {
   }
   .gallery label {
     top: 40vh;
+  }
+  #fp-nav {
+    height: 200px !important;
+    background: red;
   }
 }
 

@@ -385,7 +385,16 @@ body.fp-viewing-block1 #fp-nav {
 @media (max-width: 576px) {
   .slider-nav {
     .slick-arrow {
-      top: -10vh !important;
+      top: auto;
+      bottom: -50% !important;
+    }
+    .slick-prev {
+      left: 25%;
+      right: auto;
+    }
+    .slick-next {
+      right: 25%;
+      left: auto;
     }
   }
   .slider-container {
@@ -411,6 +420,10 @@ body.fp-viewing-block1 #fp-nav {
   }
   .gallery label {
     top: 40vh;
+  }
+  #fp-nav {
+    height: 200px !important;
+    background: red;
   }
 }
 @media screen and (orientation: landscape) and (min-device-height: 219px) and (max-device-height: 650px) {
