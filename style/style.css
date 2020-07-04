@@ -528,6 +528,7 @@ h3 {
   }
   .logo {
     margin: 10px 0 0 10px;
+    height: 20%;
   }
   .header .slider .slick-arrow {
     left: auto;
@@ -567,10 +568,11 @@ h3 {
     margin-left: 10px;
     width: 60%;
     margin-top: -10%;
+    margin-bottom: 30px;
   }
   .header-logotype {
     right: 15px;
-    bottom: 10px;
+    bottom: 40px;
   }
   .header_nav_footer_container {
     font-size: 9px;
