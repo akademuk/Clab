@@ -30,6 +30,12 @@ h3 {
   margin: 0;
   padding-left: 55px;
 }
+.fp-viewing-block1.loaded {
+  #moveUp,
+  #moveDown {
+    display: none;
+  }
+}
 #moveUp,
 #moveDown {
   position: fixed;
