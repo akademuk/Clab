@@ -151,6 +151,16 @@ body.fp-viewing-block1 #fp-nav {
   display: none;
 }
 
+@media (max-width: 992px) {
+  #fp-nav {
+    left: 0 !important;
+  }
+  #moveUp,
+  #moveDown {
+    left: 10px !important;
+  }
+}
+
 @media (max-width: 768px) {
   #fp-nav {
     display: none !important;
@@ -158,6 +168,23 @@ body.fp-viewing-block1 #fp-nav {
   #moveUp,
   #moveDown {
     display: none;
+  }
+  h3 {
+    font-size: 25px;
+    line-height: 25px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
   }
 }
 
@@ -1215,9 +1242,6 @@ body.fp-viewing-block1 #fp-nav {
   padding: 0 50px 0 0;
   height: 60vh !important;
   width: 100% !important;
-}
-
-.tabcontent {
   animation: fadeEffect 1s;
 }
 
@@ -1531,13 +1555,6 @@ body.fp-viewing-block1 #fp-nav {
 }
 
 @media (max-width: 992px) {
-  #fp-nav {
-    left: 0 !important;
-  }
-  #moveUp,
-  #moveDown {
-    left: 10px !important;
-  }
   .js-slider-control {
     top: 44px;
     width: 100%;
@@ -1602,12 +1619,6 @@ body.fp-viewing-block1 #fp-nav {
   .slider-img {
     height: 50%;
   }
-  h3 {
-    font-size: 25px;
-    line-height: 25px;
-    padding-left: 30px;
-    margin-bottom: 15px;
-  }
   .apartment-layout {
     top: 65px;
   }
@@ -1641,6 +1652,7 @@ body.fp-viewing-block1 #fp-nav {
     justify-content: inherit;
     height: auto;
     box-shadow: none !important;
+    padding: 0;
   }
   .slider-info-text .slider-info-text-left,
   .slider-info-text .slider-info-text-right {
@@ -1651,40 +1663,46 @@ body.fp-viewing-block1 #fp-nav {
   }
   .slider-info-text .slider-info-text-left p,
   .slider-info-text .slider-info-text-right p {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 7px;
   }
   .apartment-layout {
-    top: 65px;
-    left: 43% !important;
+    width: 100%;
     height: auto;
     box-shadow: none !important;
+    top: 49px;
+    bottom: auto;
+    left: 0 !important;
+    right: auto;
+    padding-left: 5%;
   }
   .apartment-layout .slider-info-text-left p,
   .apartment-layout .slider-info-text-right p {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 7px;
   }
-  h3 {
-    margin-bottom: 10px;
-  }
-  .slider-img {
-    width: 50%;
+  .js-event-slider .slick-prev {
+    left: 5%;
+    right: auto;
+    height: 10px;
+    bottom: 5%;
   }
   .js-event-slider .slick-next {
-    right: 0;
-  }
-  h2 {
-    font-size: 30px;
-    line-height: 30px;
+    right: 5%;
+    left: auto;
+    height: 10px;
+    bottom: 5%;
   }
   .tab {
-    height: 30px;
+    height: 5vh;
   }
   .tab button {
     font-size: 7px;
-    height: 24px;
+    height: 100%;
     padding: 0;
+  }
+  .tab button:nth-of-type(1) {
+    padding-left: 0;
   }
   .tab .active {
     padding-left: 0 !important;
@@ -1694,67 +1712,57 @@ body.fp-viewing-block1 #fp-nav {
     width: auto;
     height: 100%;
   }
-  .js-event-slider {
-    margin-top: 45px;
+  .tablinks {
+    height: 100%;
   }
   .js-slider-control {
-    left: 4%;
-    right: 4%;
-    top: 24px;
-    width: 92%;
+    left: 2%;
+    right: 2%;
+    top: 5vh;
+    height: 5vh;
+    width: 96%;
   }
   .js-slider-control .slick-list .slick-track {
     width: 100% !important;
+  }
+  .js-slider-control .slick-list .slick-track li {
+    width: 16% !important;
+    margin-right: 0;
   }
   .js-slider-control .slick-list .slick-track li a {
     font-size: 8px;
   }
   .slider-img {
-    padding-left: 5px;
-    height: 40%;
-    width: 40%;
-    margin-left: 20px;
+    padding-left: 0;
+    height: 50%;
+    width: 50%;
+    margin-left: 12px;
     padding-top: 0;
   }
-  .slider-info-text {
-    padding: 0;
+  .slider-img img {
+    object-fit: contain;
   }
   .js-event-slider-container {
     flex-direction: column-reverse;
     justify-content: flex-end;
   }
-  .apartment-layout {
-    top: 44px;
-    bottom: auto;
-    width: 100%;
-    left: 0 !important;
-    right: auto;
-    padding-left: 5%;
-  }
   .slider-info {
     width: 100%;
     margin-top: 10px;
   }
-  h3 {
-    font-size: 25px;
-  }
   .tabcontent {
     padding-right: 0 !important;
+    height: auto !important;
   }
-  .tab button:nth-of-type(1) {
-    padding-left: 0;
+  #room2 .js-slider-control {
+    left: 2%;
   }
-  .js-event-slider .slick-prev {
-    left: 5%;
-    right: auto;
-    height: 10px;
-    bottom: 10%;
+  #room3 .js-slider-control {
+    left: 2%;
   }
-  .js-event-slider .slick-next {
-    right: 5%;
-    left: auto;
-    height: 10px;
-    bottom: 10%;
+  #withTerraces .js-slider-control {
+    left: 2%;
+    right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
