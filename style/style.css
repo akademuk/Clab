@@ -1099,7 +1099,7 @@ body.fp-viewing-block1 #fp-nav {
   .slider-container {
     top: 40vh;
     padding-bottom: 10vh;
-    height: 60vh;
+    height: auto;
   }
   .container_background {
     display: none;
