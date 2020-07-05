@@ -530,6 +530,12 @@ h3 {
     margin: 10px 0 0 10px;
     height: 20%;
   }
+  .logo a {
+    height: 100%;
+  }
+  .logo a svg {
+    height: 100%;
+  }
   .header .slider .slick-arrow {
     left: auto;
     right: 50%;
@@ -573,7 +579,7 @@ h3 {
   }
   .header-logotype {
     right: 15px;
-    top: 80vh;
+    top: 77vh;
     bottom: auto;
   }
   .header_nav_footer_container {

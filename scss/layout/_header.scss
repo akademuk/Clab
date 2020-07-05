@@ -472,6 +472,12 @@
   .logo {
     margin: 10px 0 0 10px;
     height: 20%;
+    a {
+      height: 100%;
+      svg {
+        height: 100%;
+      }
+    }
   }
   .header {
     .slider {
@@ -532,7 +538,7 @@
   }
   .header-logotype {
     right: 15px;
-    top: 80vh;
+    top: 77vh;
     bottom: auto;
   }
   .header_nav_footer_container {
