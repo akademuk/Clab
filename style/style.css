@@ -200,7 +200,7 @@ body.fp-viewing-block1 #fp-nav {
 }
 
 .header .slider .slick-list .slick-track .slider__item {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 0.01%, rgba(0, 0, 0, 0) 100%), url(../img/header.png);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 0.01%, rgba(0, 0, 0, 0) 100%), url(../img/headerBig.png);
   height: 100vh;
   background-size: cover !important;
   background-repeat: no-repeat;
@@ -208,6 +208,10 @@ body.fp-viewing-block1 #fp-nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.header .slider .slick-list .slick-track .slider__item_two {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 0.01%, rgba(0, 0, 0, 0) 100%), url(../../img/header_bg2Big.png);
 }
 
 .header .slider .slick-arrow {
@@ -265,10 +269,6 @@ body.fp-viewing-block1 #fp-nav {
 
 .header .slider .slick-dots .slick-active {
   background: #757575;
-}
-
-.slider__item_two {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 0.01%, rgba(0, 0, 0, 0) 100%), url(../../img/header_bg2.png) !important;
 }
 
 .logo {
@@ -576,6 +576,15 @@ body.fp-viewing-block1 #fp-nav {
   font-size: 11px;
   margin-right: 5px;
   color: #a68e52;
+}
+
+@media (min-width: 1720px) {
+  .header .slider .slick-list .slick-track .slider__item {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 0.01%, rgba(0, 0, 0, 0) 100%), url(../img/header.png);
+  }
+  .header .slider .slick-list .slick-track .slider__item_two {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 0.01%, rgba(0, 0, 0, 0) 100%), url(../../img/header_bg2.png);
+  }
 }
 
 @media (max-width: 1200px) {
