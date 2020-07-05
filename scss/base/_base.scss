@@ -30,3 +30,101 @@ h3 {
   margin: 0;
   padding-left: 55px;
 }
+#moveUp,
+#moveDown {
+  position: fixed;
+  z-index: 99;
+  background: transparent;
+  outline: none;
+  left: 45px !important;
+}
+#moveUp {
+  top: 60%;
+}
+#moveDown {
+  top: 70%;
+}
+#fp-nav {
+  left: 33px !important;
+  height: 50vh;
+  top: 30% !important;
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    li {
+      width: 100%;
+      a {
+        span {
+          background: #a68e52;
+          box-shadow: 0px 0px 10px rgba(166, 142, 82, 0.7);
+          border: none;
+          width: 3px;
+          height: 3px;
+          top: 10px;
+          left: 11px;
+        }
+      }
+      .active {
+        width: 30px;
+        height: 30px;
+        background: rgba(245, 245, 245, 0.1);
+        border: 0.5px solid #a68e52;
+        border-radius: 50%;
+        margin-left: -3px;
+        span {
+          width: 20px !important;
+          height: 20px !important;
+          background: rgba(221, 221, 221, 1) !important;
+          border: 0.5px solid #a68e52 !important;
+          border-radius: 50% !important;
+          left: 10px !important;
+          &::after {
+            content: "";
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #a68e52;
+            border-radius: 50%;
+            z-index: 3;
+            left: 50%;
+            margin-left: -3px;
+            top: 50%;
+            margin-top: -3px;
+          }
+        }
+      }
+      &:hover {
+        .fp-tooltip {
+          opacity: 0;
+        }
+      }
+    }
+    .fp-tooltip {
+      font-size: 10px !important;
+      line-height: 26px !important;
+      letter-spacing: 0.05em !important;
+      text-transform: uppercase !important;
+      color: #757575 !important;
+      margin-left: 20px !important;
+      margin-top: 5px !important;
+    }
+  }
+}
+body.fp-viewing-block1 #fp-nav {
+  display: none;
+}
+@media (max-width: 768px) {
+  #fp-nav {
+    display: none !important;
+  }
+  #moveUp,
+  #moveDown {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+}
