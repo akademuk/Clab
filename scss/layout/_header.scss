@@ -29,6 +29,9 @@
               rgba(0, 0, 0, 0) 100%
             ),
             url(../img/header_bg2Big.png);
+          background-size: cover !important;
+          background-repeat: no-repeat;
+          background-position: center !important;
         }
       }
     }
@@ -374,6 +377,9 @@
                 rgba(0, 0, 0, 0) 100%
               ),
               url(../img/header.png);
+            background-size: cover !important;
+            background-repeat: no-repeat;
+            background-position: center !important;
           }
           .slider__item_two {
             background: linear-gradient(
@@ -383,6 +389,9 @@
                 rgba(0, 0, 0, 0) 100%
               ),
               url(../img/header_bg2.png);
+            background-size: cover !important;
+            background-repeat: no-repeat;
+            background-position: center !important;
           }
         }
       }
@@ -414,6 +423,9 @@
               rgba(0, 0, 0, 0) 100%
             ),
             url(../img/Large/header-bgLarge.png);
+          background-size: cover !important;
+          background-repeat: no-repeat;
+          background-position: center !important;
         }
       }
     }
@@ -450,6 +462,9 @@
               rgba(0, 0, 0, 0) 100%
             ),
             url(../img/Medium/header_bg2Medium.png) !important;
+          background-size: cover !important;
+          background-repeat: no-repeat;
+          background-position: center !important;
         }
       }
     }

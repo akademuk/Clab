@@ -167,6 +167,7 @@
   .documentSlider-container {
     margin-right: 15px;
     padding: 10px 5px 5px 5px;
+    height: 35vh;
   }
   .document-text {
     margin-bottom: 20px !important;
@@ -177,5 +178,20 @@
   .document-text-address {
     font-size: 12px;
     line-height: 15px;
+  }
+  .document {
+    .wrapper-document {
+      width: 90%;
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+  .documentSlider-svg {
+    margin-bottom: 10px;
+    svg {
+      height: 40px;
+      width: 40px;
+    }
   }
 }
