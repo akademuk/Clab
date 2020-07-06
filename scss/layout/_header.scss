@@ -491,7 +491,9 @@
                 rgba(0, 0, 0, 0.9) 0.01%,
                 rgba(0, 0, 0, 0) 100%
               ),
-              url(../img/Small/header-bgSmall.png) !important;
+              url(../../img/Small/header-bgSmall.png) !important;
+            background-size: 150% 100% !important;
+            background-position: center !important;
           }
           .slider__item_two {
             background: linear-gradient(

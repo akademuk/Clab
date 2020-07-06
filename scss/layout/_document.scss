@@ -1,0 +1,137 @@
+.document {
+  background: url(../../img/documentBg.png), rgba(22, 27, 33, 1);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  .wrapper-document {
+    width: 52%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 50px 0 84px 0;
+    h2 {
+      color: #fdfbfb;
+      margin-bottom: 20px;
+    }
+  }
+  .document-text {
+    display: flex;
+    margin-bottom: 64px;
+    p {
+      font-family: "helveticaRegular";
+      font-size: 14px;
+      line-height: 24px;
+      color: #dddddd;
+    }
+  }
+}
+.document-text-info {
+  margin-right: 30px;
+}
+.documentSlider-container {
+  border: 0.5px solid #757575;
+  box-sizing: border-box;
+  margin-right: 50px;
+  padding: 34px 43px 20px 21px;
+}
+.documentSlider-svg {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  .svg-text {
+    font-family: "helveticaRegular";
+    font-size: 12px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #757575;
+    margin-bottom: 0;
+  }
+}
+.documentSlider-text {
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  padding-bottom: 22px;
+  border-bottom: 0.5px solid #757575;
+}
+.documentSlider-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-family: "helveticaRegular";
+    font-size: 12px;
+    line-height: 26px;
+    color: #757575;
+    margin-bottom: 0;
+  }
+}
+.download {
+  outline: none !important;
+}
+.documentSlider {
+  position: relative;
+  height: 65%;
+  .slick-arrow {
+    position: absolute;
+    bottom: 8px;
+    left: 20%;
+    font-size: 0;
+    outline: none;
+    z-index: 1000;
+  }
+  .slick-prev {
+    background: url(../img/prev.png);
+    width: 50px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .slick-next {
+    background: url(../img/next.png);
+    width: 50px;
+    height: 10px;
+    left: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0;
+    display: flex;
+
+    li {
+      width: 8px;
+      height: 8px;
+      background: #757575;
+      border-radius: 50px;
+      margin-right: 26px;
+      cursor: pointer;
+    }
+    .slick-active {
+      background: #a68e52;
+    }
+  }
+}
+#fp-nav {
+  ul {
+    li {
+      &:nth-of-type(4) {
+        div {
+          color: #a68e52 !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .document {
+    .wrapper-document {
+      width: 70%;
+    }
+  }
+}
